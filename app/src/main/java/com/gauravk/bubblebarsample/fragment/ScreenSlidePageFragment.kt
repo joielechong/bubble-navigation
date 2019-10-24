@@ -1,8 +1,8 @@
 package com.gauravk.bubblebarsample.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.core.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,7 +19,7 @@ private const val ARG_BG_COLOR = "arg_bg_color"
  * create an instance of this fragment.
  *
  */
-class ScreenSlidePageFragment : Fragment() {
+class ScreenSlidePageFragment : androidx.fragment.app.Fragment() {
     private var title: String? = "Default title."
     private var bgColorResId: Int = R.color.blue_inactive
 
