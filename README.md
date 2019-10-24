@@ -1,10 +1,4 @@
 # Bubble Navigation
-[![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16) 
-[ ![Download](https://api.bintray.com/packages/gauravk95/maven-repo/bubblenavigation/images/download.svg) ](https://bintray.com/gauravk95/maven-repo/bubblenavigation/_latestVersion) 
-[![Build Status](https://travis-ci.org/gauravk95/bubble-navigation.svg?branch=master)](https://travis-ci.org/gauravk95/bubble-navigation) 
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Bubble%20Navigation-green.svg?style=flat )]( https://android-arsenal.com/details/1/7544 ) 
-[![Android Weekly]( https://img.shields.io/badge/Android%20Weekly-%23351-blue.svg )]( http://androidweekly.net/issues/issue-351 ) 
-[![AwesomeAndroid](https://img.shields.io/badge/Awesome_Android-BubbleNavigation-purple.svg?style=flat)](https://android.libhunt.com/bubble-navigation-alternatives)
 
 🎉 A light-weight library to easily make beautiful Navigation Bars with a ton of 🎨 customization options.
 
@@ -12,15 +6,15 @@
 
 | FloatingTopBarActivity  | TopBarActivity  |
 | ------------- |:-------------:| 
-| <img src="https://raw.githubusercontent.com/gauravk95/bubble-navigation/master/sample/bn_two.gif" width="270" height="480"> |<img src="https://raw.githubusercontent.com/gauravk95/bubble-navigation/master/sample/bn_one.gif" width="270" height="480">|
+| <img src="sample/bn_two.gif" width="270" height="480"> |<img src="sample/bn_one.gif" width="270" height="480">|
 
 |   BottomBarActivity    |    EqualBottomBarActivity  |
 | ------------- |:-------------:| 
-| <img src="https://raw.githubusercontent.com/gauravk95/bubble-navigation/master/sample/bn_four.gif" width="270" height="480"> |<img src="https://raw.githubusercontent.com/gauravk95/bubble-navigation/master/sample/bn_three.gif" width="270" height="480">|
+| <img src="sample/bn_four.gif" width="270" height="480"> |<img src="sample/bn_three.gif" width="270" height="480">|
 
 
 ### Features:
-- Support for API Level 16+ 
+- Support for API Level 15+
 - Highly customizable
 - Light weight and easy-to-use
 - Supports TransitionDrawable for cool state changes
@@ -35,10 +29,17 @@
 Check out the Sample app, to see how its implemented.
 
 ### Gradle
-* This library is available on JCenter. To use it, add the following to `build.gradle`
-```gradle
+
+* This library is available on jitpatck.io. To use it, add the following to `build.gradle`
+
+```groovy
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
-    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+    implementation 'com.gitlab.joielechong:android-bubble-navigation:1.1.0
 }
 ```
 
@@ -163,16 +164,11 @@ Or in Kotlin
 
 ## Contribute
 
-Users are welcome to suggest ideas or feature requests, or report bugs and issues [here](https://github.com/gauravk95/bubble-navigation/issues)
-
 I am always open to new suggestions and good contributions.
-
-## Contact
-
-Feel free to reach out to me at gauravkcs50@gmail.com
 
 ## License:
 ```
+    Copyright 2019 Joielechong
     Copyright 2019 Gaurav Kumar
 
     Licensed under the Apache License, Version 2.0 (the "License");

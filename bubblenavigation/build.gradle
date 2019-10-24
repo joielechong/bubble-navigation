@@ -1,4 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.gitlab.joielechong'
+version = "1.1.0"
+
+def verCode = 110
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -6,8 +12,8 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 8
-        versionName "1.0.7"
+        versionCode verCode
+        versionName version
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -30,34 +36,3 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
-repositories {
-    mavenCentral()
-}
-
-ext {
-    bintrayRepo = 'maven-repo'
-    bintrayName = 'bubblenavigation'
-
-    publishedGroupId = 'com.gauravk.bubblenavigation'
-    libraryName = 'bubblenavigation'
-    artifact = 'bubblenavigation'
-
-    libraryDescription = 'A light-weight library to easily make beautiful Navigation Bar with ton of customization option.'
-
-    siteUrl = 'https://github.com/gauravk95/bubble-navigation'
-    gitUrl = 'https://github.com/gauravk95/bubble-navigation.git'
-
-    libraryVersion = '1.0.7'
-
-    developerId = 'gauravk95'
-    developerName = 'Gaurav Kumar'
-    developerEmail = 'gauravkcs50@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-// add it to the bottom of the file
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
