@@ -3,10 +3,8 @@ package com.gauravk.bubblebarsample.adapters;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-
 import com.gauravk.bubblebarsample.fragment.ScreenSlidePageFragment;
-
-import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -15,9 +13,9 @@ import java.util.ArrayList;
  */
 public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<ScreenSlidePageFragment> fragmentList;
+    private List<ScreenSlidePageFragment> fragmentList;
 
-    public ScreenSlidePagerAdapter(ArrayList<ScreenSlidePageFragment> fragmentList, FragmentManager fm) {
+    public ScreenSlidePagerAdapter(List<ScreenSlidePageFragment> fragmentList, FragmentManager fm) {
         super(fm);
         this.fragmentList = fragmentList;
     }
